@@ -126,7 +126,7 @@ function drawBackground(ctx) {
         ctx.fillRect(0, startY + imgHeight, width, (height - startY));
     }
     let fontSize = height / 20;
-    let str1 = "TO Wanqi: \nHappy New Year !";
+    let str1 = "TO Wanqi: \nHappy New Year !\n";
     //let offPos = new Vector(0, Math.tan(new Date().getTime() / 1000) * 30);
     let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
     let fontPos1 = new Vector(
