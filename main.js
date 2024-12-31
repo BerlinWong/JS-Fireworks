@@ -41,16 +41,16 @@ function mainLoop(timestamp) {
     draw(ctx);
 
     //--------End---------------
-    // let str1 = "Fps: " + 1000 / Timesub, str2 = "Timesub: " + Timesub, str3 = "DeltaTime: " + DeltaTime;
-    // drawString(ctx, str1 + "\n" + str2 + "\n" + str3,
-    //     0, height - 31,
-    //     "rgba(255,255,255,0.3)", 10, "consolas",
-    //     0, 0, 0);
-    // if (loop) {
-    //     animation = window.requestAnimationFrame(mainLoop);
-    // } else {
-    //     // over
-    // }
+    let str1 = "Fps: " + 1000 / Timesub, str2 = "Timesub: " + Timesub, str3 = "DeltaTime: " + DeltaTime;
+    drawString(ctx, str1 + "\n" + str2 + "\n" + str3,
+        0, height - 31,
+        "rgba(255,255,255,0.001)", 10, "consolas",
+        0, 0, 0);
+    if (loop) {
+        animation = window.requestAnimationFrame(mainLoop);
+    } else {
+        // over
+    }
 }
 //-------------------------------------------------------
 var clearAlpha = 0.3;
