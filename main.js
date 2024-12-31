@@ -142,7 +142,7 @@ function drawBackground(ctx) {
     let str2 = "2025";
     let fontPos2 = new Vector(
         width / 2 - str2.length * fontSize * 0.3 + offPos.x,
-        height / 3 + fontSize + offPos.y
+        height / 2 + fontSize + offPos.y
     );
     drawString(ctx, str2,
         fontPos2.x, fontPos2.y,
